@@ -1,0 +1,167 @@
+* {
+  font-family: "Lato", sans-serif;
+  color: #47a3da;
+  list-style: none;
+}
+
+h1 {                      /*Vertical Timeline Heading*/
+  text-align: left;
+  color:  #47a3da;
+  font-size: 18pt;
+  padding-left: 15px;
+}
+
+a {                         /*nav links*/
+  text-align: left;
+  text-decoration: none;
+  padding-left: 15px;
+  color:  #47a3da
+}
+
+ul {
+  margin-top: 30px;
+}
+
+
+
+
+div.cbp_tmicon {        /*circles*/
+  height: 20px;
+  width: 20px;
+  border: 10px solid #afdcf8;
+  border-radius: 20px;
+  display: inline-block;
+
+}
+
+li .cbp_tmlabel {        /*time and date positioning*/
+  width: 45%;
+  float: right;
+  margin-right: 80px;
+  display: block;
+}
+
+li .cbp_tmicon {          /*circles positioning*/
+  margin-left: 76px;
+  left: 20%;
+  display: inline;
+  float: left;
+}
+
+/*ul.cbp_tmtimeline::before {    /*Vertical Line DESKTOP ONLY*/
+/*  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  height:2096px;
+  background: #afdcf8;
+  left: 20%;
+  margin-top: 138px;
+  margin-left: -10px;
+
+}*/
+
+li .cbm_tmtime {            /*boxes positioning*/
+  width: 25%;
+  float: left;
+  display: block;
+
+
+}
+
+.cbp_tmlabel {                     /*blue boxes*/  /*yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/*/
+  background-color:  #47a3da;
+  border-radius: 5px;
+  margin: 50px;
+  box-sizing: content-box;
+  position: relative;
+}
+
+li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
+  background-color: #247cb1;
+}
+
+
+/*.cbp_tmlabel::after, .cbp_tmlabel::before {     /*caret*/
+/*	right: 100%;
+	top: 9%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.cbp_tmlabel::after {                         /*caret*/
+	/*border-color: rgba(71, 163, 218, 0);
+	border-right-color: #47a3da;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.cbp_tmlabel::before {                      /*caret*/
+/*	border-color: rgba(71, 163, 218, 0);
+	border-right-color: #47a3da;
+	border-width: 10px;
+	margin-top: -10px;
+}
+
+li:nth-child(odd) .cbp_tmlabel::after {     /*every other blue caret*/    /*https://css-tricks.com/how-nth-child-works/*/
+/*  border-right-color: #247cb1;
+}
+
+li:nth-child(odd) .cbp_tmlabel::before {     /*every other blue caret*/    /*https://css-tricks.com/how-nth-child-works/*/
+/*  border-right-color: #247cb1;
+}*/
+
+
+span {                    /*time and date*/
+  display: block;
+}
+
+h2 {                          /*Headings in boxes*/
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  margin: 10px;
+
+
+}
+
+p {                           /*paragraphs*/
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  border-top: 1px solid white;   /*line divider*/
+  padding-top: 15px;
+}
+
+time {                          /*time font styles*/
+  font-family: sans-serif;
+  color:  #47a3da;
+  float: left;
+  clear: right;
+  margin: 20px;
+}
+
+time > span:first-child {      /*date specific styling*/
+  color: grey;
+
+}
+
+time > span:nth-child(2) {        /*time specific styling*/
+  font-weight: bold;
+  font-size: 28pt;
+
+}
+
+/*div .cbp_tmicon .cbp_tmicon-phone {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}*/
