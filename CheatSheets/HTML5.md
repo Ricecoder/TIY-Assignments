@@ -8,7 +8,7 @@ HTML tags consist of:
 Ex: `<p>Optional content</p>`
 
 Unless an element is an "empty element" like an `<img>` then it must contain both an opening and closing tag.
-Empty elements are self closing. Ex: `<img src="url" title />` 
+Empty elements are self closing. Ex: `<img src="url" title />`
 
 
 ## `<html>`
@@ -129,7 +129,7 @@ Conditional comments. Used to hide code or other text.
 
 
 
-## [`<li>`] (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+##[`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 
   List Item. In ordered lists they are displayed (usually) with numbers.
   In unordered lists they are displayed with bullets.
@@ -139,9 +139,69 @@ Conditional comments. Used to hide code or other text.
   * _display_: block
 
 
+##[`<dl>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)  
+
+Description list element. Encloses a list of pairs of terms and descriptions. Commonly used in glossaries or to display meta-data.
+
+* _parents_: Any element that accepts flow content.
+* _content_: 0 or more `<dt>` elements that are followed by one or more `<dd>` elements.
+* _display_: block
+
+##[`<dt>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt)
+
+Dictionary term. Used to identify a term in a definition list. Occurs only as a child of `<dl>`.
+
+* _parents_: `<dl>`
+* _content_: Flow content
+* _display_: block
+
+##[`<dd>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd)
+
+Dictionary definition. Description of a term in a `<dl>`.
+
+* _parents_: `<dl>` or `<dd>` inside a `<dl>`
+* _content_: Flow content
+* _display_: block
+
+
+##[`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+
+A document section in which interactive controls/fields submit info to a webserver.
+
+* _parents_: Any element that accepts flow elements
+* _content_: Flow Content
+* _display_: block
+
+
+##[`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+
+Creates interactive controls that accept data from a user. How it works/appears varies on the value of its `type` attribute. Does not have a closing tag.
+
+* _parents_: Any element that accepts Phrasing content
+* _content_: None. Empty element.
+* _display_: block
+
+
+##[`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
+
+Creates captions for an item in an interface. Can have control elements placed inside of can be used with the `for` attribute.
+
+ex:
+`<label>Click me <input type="text"></label>`
+
+`<label for="username">Click me</label>
+<input type="text" id="username">`
+
+
+* _parents_: Any element that accepts phrasing content
+* _content_: Phrasing Content but no descendant label elements.
+* _display_: block
 
 
 
+* _parents_:
+* _content_:
+* _display_:
 ###### Footnotes
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)

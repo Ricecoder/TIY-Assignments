@@ -34,6 +34,13 @@ div.cbp_tmicon {        /*circles*/
 
 }
 
+li .cbp_tmicon {          /*circles positioning*/
+  margin-left: 76px;
+  left: 20%;
+  display: inline;
+  float: left;
+}
+
 li .cbp_tmlabel {        /*time and date positioning*/
   width: 45%;
   float: right;
@@ -41,12 +48,7 @@ li .cbp_tmlabel {        /*time and date positioning*/
   display: block;
 }
 
-li .cbp_tmicon {          /*circles positioning*/
-  margin-left: 76px;
-  left: 20%;
-  display: inline;
-  float: left;
-}
+
 
 /*ul.cbp_tmtimeline::before {    /*Vertical Line DESKTOP ONLY*/
 /*  content: '';
@@ -76,11 +78,15 @@ li .cbm_tmtime {            /*boxes positioning*/
   margin: 50px;
   box-sizing: content-box;
   position: relative;
+
+  li:nth-child(odd) {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
+    background-color: #247cb1;
+  }
 }
 
-li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
-  background-color: #247cb1;
-}
+// li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
+//   background-color: #247cb1;
+// }
 
 
 /*.cbp_tmlabel::after, .cbp_tmlabel::before {     /*caret*/
@@ -147,18 +153,29 @@ time {                          /*time font styles*/
   float: left;
   clear: right;
   margin: 20px;
+
+   span:first-child {      /*date specific styling*/
+    color: grey;
+  }
+
+  span:nth-child(2) {        /*time specific styling*/
+    font-weight: bold;
+    font-size: 28pt;
+
+  }
 }
 
-time > span:first-child {      /*date specific styling*/
-  color: grey;
+// time > span:first-child {      /*date specific styling*/
+//   color: grey;
+//
+// }
+//
+// time > span:nth-child(2) {        /*time specific styling*/
+//   font-weight: bold;
+//   font-size: 28pt;
+//
+// }
 
-}
-
-time > span:nth-child(2) {        /*time specific styling*/
-  font-weight: bold;
-  font-size: 28pt;
-
-}
 
 /*div .cbp_tmicon .cbp_tmicon-phone {
   display: block;
