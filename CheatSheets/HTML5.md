@@ -108,6 +108,7 @@ Conditional comments. Used to hide code or other text.
   * _display_: inline
 
 
+#Lists
 
 ## `<ul>`
 
@@ -139,6 +140,8 @@ Conditional comments. Used to hide code or other text.
   * _display_: block
 
 
+#Dictionary
+
 ##[`<dl>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)  
 
 Description list element. Encloses a list of pairs of terms and descriptions. Commonly used in glossaries or to display meta-data.
@@ -163,6 +166,8 @@ Dictionary definition. Description of a term in a `<dl>`.
 * _content_: Flow content
 * _display_: block
 
+
+#Form
 
 ##[`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
@@ -196,6 +201,27 @@ ex:
 * _parents_: Any element that accepts phrasing content
 * _content_: Phrasing Content but no descendant label elements.
 * _display_: block
+
+
+##[`<fieldset`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
+
+Groups several controls within a form.
+
+ex:
+```
+<form>
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" id="radio"> <label for="radio">Click me</label>
+  </fieldset>
+</form>
+```
+* _parents_: Any element that accepts flow content
+* _content_: An optional <legend> element, followed by flow content.
+* _display_: block
+
+
+
 
 
 
