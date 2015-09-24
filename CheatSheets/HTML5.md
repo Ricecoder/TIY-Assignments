@@ -221,8 +221,39 @@ ex:
 * _display_: block
 
 
+##[`<legend>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)
+
+Caption for its parent element.
+
+* _parents_: `<fieldset>` with a 1st child of this `<legend>`
+* _content_: Phrasing content
+* _display_: block
+
+##[`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
+
+Form element that provides a menu (usually dropdown) with `<option>` elements that list the options for that particular menu.
+
+* _parents_: any element that accepts phrasing content
+* _content_: `<option>` 0+, `<optgroup>`
+* _display_: block
 
 
+##[`<optgroup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup)
+
+Groups `<option>`s within a `<select>`
+
+* _parents_: `<select>`
+* _content_: `<option>`
+* _display_: none
+
+
+##[`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
+
+Multi-line text box.
+
+* _parents_: Any element that accepts phrasing content
+* _content_: Character data
+* _display_: block
 
 
 * _parents_:
