@@ -94,6 +94,34 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  color: green;
+  font-family: arial, sans-serif;
+
+  span {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  li {
+
+    h3 {
+      color: red;
+    }
+
+    p{
+      color: gray;
+    }
+
+
+  }
+
+}
 
 
 
