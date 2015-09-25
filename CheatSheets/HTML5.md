@@ -256,6 +256,114 @@ Multi-line text box.
 * _display_: block
 
 
+#Tables
+
+##[`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+
+Represents a table.
+
+ex:
+```
+In this order:
+1. an optional <caption> element,
+2. zero or more <colgroup> elements,
+3. an optional <thead> element,
+4. one of the two alternatives:
+ one <tfoot> element, followed by:
+ zero or more <tbody> elements,
+ or one or more <tr> elements,
+8. a second alternative followed by an optional <tfoot> element:
+9. either zero or more <tbody> elements,
+or one or more <tr> elements
+```
+* _parents_: Any that accept flow content
+* _content_: See ex
+* _display_: [table](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+
+##[`<caption>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)
+
+Optional title of a table.
+
+
+* _parents_: Always first child of `<table>`
+* _content_: Flow content
+* _display_: table-caption
+
+
+##[`<colgroup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup)
+
+Defines a group of columns.
+
+* _parents_: A `<table>` element. The `<colgroup>` must appear after any optional `<caption>` element but before any `<thead>`, `<th>`,`<tbody>`, `<tfoot>` and `<tr>` element.
+* _content_: If the span attribute is present: none, it is an empty element.
+If the attribute is not present: zero or more `<col>` element
+* _display_: table-column-group
+
+
+##[`<col>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col)
+
+Defines a column in a table. Used for styling the column.
+
+* _parents_: `<colgroup>`
+* _content_: None. Empty element.
+* _display_: table column
+
+
+##[`<tbody>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody)
+
+Table body element. Defines the body of a table to be 1+ `<tr>` elements. Used semantically with `<thead>`, `<tfoot>`. Enables scrolling of the body if longer than the page.
+
+* _parents_: Within the required parent `<table>` element, the `<tbody>` element can be added after a `<caption>`, `<colgroup>`, `<thead>` and a `<tfoot>` element.
+* _content_: 0+ `<tr>` elements.
+* _display_: table-row-group
+
+
+##[`<thead>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead)
+
+Table head. Defines a set of rows that are the head of the columns of the table.
+
+* _parents_: A <table> element. The <thead> must appear after any <caption> or <colgroup> element, even implicitly defined, but before any <tbody>, <tfoot> and <tr> element.
+* _content_: 0+ `<tr>`
+* _display_: table-header-group
+
+
+##[`<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)
+
+Table header cell. Header for a group of cells. Defined by the `scope` and `headers` attributes.
+
+*`scope`: Defines the cells related to the header. Has values:
+-`row`: header relates to all of the cells in that row.
+-`col`: header relates to all the cells in that column.
+-`rowgroup`: header relates to all of the remaining cells in the row group (those to hte right of this element or to the left).
+-`colgroup`: header relates to all the remaining ells in the column group that this element belongs to.
+*`header`: This attributes a list of space-separated strings, each corresponding to the `id` attribute of the `<th>` elements that applies to this element.
+
+* _parents_: `<tr>` element
+* _content_: Phrasing content
+* _display_: table-head
+
+
+##[`<tfoot>`]()
+* _parents_:
+* _content_:
+* _display_: table-footer-group
+
+
+##[`<tr>`]()
+* _parents_:
+* _content_:
+* _display_: table-row
+
+
+##[`<td>`]()
+* _parents_:
+* _content_:
+* _display_: table-cell
+
+
+
+##[``]()
 * _parents_:
 * _content_:
 * _display_:
@@ -265,3 +373,4 @@ Multi-line text box.
 [2](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 [3](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Phrasing_content)
 [4](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
+[5](http://colintoh.com/blog/display-table-anti-hero)
