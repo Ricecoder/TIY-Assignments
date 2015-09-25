@@ -332,12 +332,13 @@ Table head. Defines a set of rows that are the head of the columns of the table.
 
 Table header cell. Header for a group of cells. Defined by the `scope` and `headers` attributes.
 
-*`scope`: Defines the cells related to the header. Has values:
+`scope`: Defines the cells related to the header. Has values:
 -`row`: header relates to all of the cells in that row.
 -`col`: header relates to all the cells in that column.
 -`rowgroup`: header relates to all of the remaining cells in the row group (those to hte right of this element or to the left).
 -`colgroup`: header relates to all the remaining ells in the column group that this element belongs to.
-*`header`: This attributes a list of space-separated strings, each corresponding to the `id` attribute of the `<th>` elements that applies to this element.
+
+`header`: This attributes a list of space-separated strings, each corresponding to the `id` attribute of the `<th>` elements that applies to this element.
 
 * _parents_: `<tr>` element
 * _content_: Phrasing content
