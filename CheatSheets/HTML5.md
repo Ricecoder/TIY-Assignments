@@ -344,21 +344,34 @@ Table header cell. Header for a group of cells. Defined by the `scope` and `head
 * _display_: table-head
 
 
-##[`<tfoot>`]()
-* _parents_:
-* _content_:
+##[`<tfoot>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot)
+
+Table foot Element. Defines a set of rows summarizing the columns of a table.
+
+* _parents_: A `<table>` element. The `<tfoot>` must appear after any `<caption>`, `<colgroup>` or `<thead>` element. It can be before or after all `<tbody>` and `<tr>` elements, but not intermixed with them.
+HTML 4 The `<tfoot>` element cannot be placed after any `<tbody>` and `<tr>` element. This restriction has been softened in HTML5.
+
+* _content_: 0+ `<tr>` elements
 * _display_: table-footer-group
 
 
-##[`<tr>`]()
-* _parents_:
-* _content_:
+
+
+##[`<tr>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr)
+
+Table row. Can be a mix of `<td>` and `<th>` elements.
+
+* _parents_: A `<table>`, `<thead>`, `<tbody>` or `<tfoot>` element.
+* _content_: 0+ `<td>` and `<th>` elements.
 * _display_: table-row
 
 
-##[`<td>`]()
-* _parents_:
-* _content_:
+##[`<td>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td)
+
+Table cell. Defines one cell that contains data.
+
+* _parents_: `<tr>`
+* _content_: Flow content
 * _display_: table-cell
 
 
