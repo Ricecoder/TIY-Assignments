@@ -90,7 +90,7 @@ grid.addEventListener('click', function(){
 // });
 
 */
-
+/*
 var buttons = document.querySelector("div #cbp-vm");
 var list = document.querySelector("a.cbp-vm-icon.cbp-vm-list");
 var grid = document.querySelector("a.cbp-vm-icon.cbp-vm-grid");
@@ -109,3 +109,23 @@ grid.addEventListener('click', function(gridButton){
   grid.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
   list.className = "cbp-vm-icon cbp-vm-list";
 });
+*/
+//jQuery Here:
+/*
+var buttons = $('div #cbp-vm');
+var list = $('a.cbp-vm-icon.cbp-vm-list');
+var grid = $('cbp-vm-icon cbp-vm-grid');
+*/
+//When list icon is clicked div gets "cbp-vm-switcher and cbp-vm-view-list" added;
+//list gets cbp-vm-selected added;
+//grid has nothing added and might? need cbp-vm-selected added
+$('a.cbp-vm-icon.cbp-vm-list').on('click', function(){
+  $('div #cbp-vm').addClass('cbp-vm-switcher cbp-vm-view-list');
+  $('a.cbp-vm-icon.cbp-vm-list').addClass('cbp-vm-selected');
+
+});
+
+$('cbp-vm-icon cbp-vm-grid').on('click', function(){
+  $('div #cbp-vm').addClass('cbp-vm-switcher cbp-vm-view-grid');
+  $('cbp-vm-icon cbp-vm-grid').addClass('cbp-vm-selected');
+})
