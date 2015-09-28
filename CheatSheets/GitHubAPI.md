@@ -31,18 +31,28 @@ OAuth2 Token (sent as a parameter)
 ```
 $ curl https://api.github.com/?access_token=OAUTH-TOKEN
 ```
-OAuth2 Key/Secret
+3. Third way -- OAuth2 Key/Secret- used in server to server senarios.
 ```
 $ curl 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy'
 ```
 
-3. Third way -- yep, include a short description
-```
-// with another code example
-```
+-[tutorial](https://developer.github.com/guides/getting-started/)
+
+
 
 ## [Users](https://developer.github.com/v3/users/)
 
 > How do I ask the API for the profile information for a specific user?
+The `get` command. This example gets user defunkt's profile. 
+```
+# GET /users/defunkt
+$ curl https://api.github.com/users/defunkt
 
-. . .
+{
+  "login": "defunkt",
+  "id": 2,
+  "url": "https://api.github.com/users/defunkt",
+  "html_url": "https://github.com/defunkt",
+  ...
+}
+```
