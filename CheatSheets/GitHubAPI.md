@@ -47,7 +47,8 @@ The `get` command. This example gets user defunkt's profile.
 ```
 # GET /users/defunkt
 $ curl https://api.github.com/users/defunkt
-
+```
+```
 {
   "login": "defunkt",
   "id": 2,
