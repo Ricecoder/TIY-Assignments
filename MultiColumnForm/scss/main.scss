@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: white;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -94,6 +94,125 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   body {                              /*background*/
+     background-color: #47a3da;
+    //  margin-left: 20%;
+    //  margin-right: 20%;
+    //  width: 60%;
+
+
+     span {                             /*Blueprints*/
+       display: block;
+       margin-left: 30px;
+       font-family: 'Lato', Calibri, Arial, sans-serif;
+       color: white;
+
+     }
+
+     nav {                             /*Nav buttons positioning*/
+       display: inline-block;
+       font-family: sans-serif;
+       float:right;
+     }
+
+     a {                               /*Nav buttons styling*/
+       text-decoration: none;
+       color: white;
+     }
+
+
+     h1 {                              /*Responsive Multi-Column Form*/
+       text-align: center;
+       font-family: 'Lato', Calibri, Arial, sans-serif;
+       color: white;
+       float: left;
+       display:inline-block;
+       margin-bottom: 30px;
+       margin-left: 30px;
+     }
+
+     form {                          /*Form positioning Global*/
+       text-align: center;
+       margin-bottom: 20px;
+       display: block;
+       clear: both;
+
+
+
+     }
+
+     /*.cbp-mc-form:before, .cbp-mc-form:after {
+         content: " ";
+         display: table;
+     }*/
+
+     div.cbp-mc-column  {            /*column positioning*/
+       width: 33%;
+       float: left;
+
+     }
+
+     label {                         /*text above input boxes*/
+       font-family: 'Lato', Calibri, Arial, sans-serif;
+       color: white;
+       text-align: center;
+       display: block;
+       padding: 15px;
+
+     }
+
+
+     input {                         /*Single-line input boxes*/
+       border: 3px solid white;
+       padding: 5px;
+       background: #47a3da;
+       color: white;
+
+     }
+
+
+
+     textarea {                      /*Multi-line input boxes*/
+       background: #47a3da;
+       border: 3px solid white;
+       height: 100px;
+     }
+
+     #country {                      /*Country dropdown*/
+       background: #47a3da;
+       border: 2px solid white;
+
+     }
+
+     #occupation {                   /*Occupation dropdown*/
+       background: #47a3da;
+       border: 2px solid white;
+     }
+
+     #talent {                       /*Talent dropdown*/
+       background: #47a3da;
+       border: 2px solid white;
+     }
+
+     .cbp-mc-submit-wrap {
+       clear: both;
+     }
+
+     input.cbp-mc-submit {           /*Submit button*/
+       color: white;
+       text-align: center;
+       background: #247cb1;
+       border: none;
+       border-radius: 3px;
+       display: block;
+       margin-top: 50px;
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+
+   }
+
 
 
 

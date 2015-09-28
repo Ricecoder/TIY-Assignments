@@ -1,28 +1,28 @@
 
 
 /********************************************************/
-/*code that applies to both:*/
+// code that applies to both:
 
-* {                                         /*GENERAL PAGE STYLING*/
+* {                                         //GENERAL PAGE STYLING
   font-family: "Lato" sans-serif;
   color: #47a3da;
   list-style: none;
 
 
-  div #cbp-vm {                             /*BORDER*/
+  div #cbp-vm {                             //BORDER
     border: 3px solid #47a3da;
     padding: 20px;
     height: 2000px;
     margin: 130px;
   }
 
-  ul {                                      /*HORIZONTAL LINE*/
+  ul {                                      //HORIZONTAL LINE
     border-top: 3px solid #47a3da;
     height: 0px;
     margin-bottom: 50px;
   }
 
-  .cbp-vm-options a:before {            /*GRID ICON POSITIONING*/
+  .cbp-vm-options a:before {            //GRID ICON POSITIONING
       width: 40px;
       height: 40px;
       line-height: 40px;
@@ -31,11 +31,11 @@
       float: right;
   }
 
-  .cbp-vm-grid::before {                /*GRID ICON*/
+  .cbp-vm-grid::before {                //GRID ICON
     content: "\f00a";
   }
 
-  .cbp-vm-icon::before {               /*GRID ICON STYLING*/
+  .cbp-vm-icon::before {               //GRID ICON STYLING
       font-family: 'fontawesome';
       speak: none;
       font-style: normal;
@@ -54,38 +54,38 @@
 
 
   /*********************************************/
-  /*Code that applies to GRID*/
+  // Code that applies to GRID
 
-  .cbp-vm-view-grid #cbp-vm {                /*BORDER*/
+  .cbp-vm-view-grid #cbp-vm {                //BORDER
     height: 2000px;
 
   }
 
-  .cbp-vm-view-grid ul {                  /*BASIC STYLING*/
+  .cbp-vm-view-grid ul {                  //BASIC STYLING
     text-align: center;
 
   }
 
-  .cbp-vm-view-grid li {                  /*BASIC GRID*/
+  .cbp-vm-view-grid li {                  //BASIC GRID
     float:left;
     width: 33%;
   }
 
-  .cbp-vm-view-grid h3 {                    /*PRODUCT NAME*/
+  .cbp-vm-view-grid h3 {                    //PRODUCT NAME
     font-size: 25pt;
     font-weight: bolder;
     padding: 2px;
     margin: 2px;
   }
 
-  .cbp-vm-view-grid  .cbp-vm-price {          /*PRICE*/
+  .cbp-vm-view-grid  .cbp-vm-price {          //PRICE
     color: #c0c0c0;
     font-size: 20pt;
     padding: 5px;
     margin-bottom: 4px;
   }
 
-  .cbp-vm-view-grid .cbp-vm-details {        /*DESCRIPTION*/
+  .cbp-vm-view-grid .cbp-vm-details {        //DESCRIPTION
 
     max-width: 300px;
     min-height: 70px;
@@ -112,8 +112,8 @@
 
 
 
-  /*******************************************/
-  /*Code that applies to LIST*/
+
+  // Code that applies to LIST
 
   .cbp-vm-view-list #cbp-vm {
     height: 2800px;
@@ -121,7 +121,7 @@
 
   .cbp-vm-view-list li {
     padding: 20px;
-    text-align:
+  
   }
 
   .cbp-vm-view-list .cbp-vm-image {

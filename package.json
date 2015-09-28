@@ -12,7 +12,8 @@
     "mocha": "^2.3.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "sass": "node-sass scss/main.scss --output css/"
   },
   "repository": {
     "type": "git",
