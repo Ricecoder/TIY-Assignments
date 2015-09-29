@@ -9,7 +9,7 @@ We can make 60 requests per hour without authenticating but in order to do more 
 Make 60 requests per hour. 
 
 * What _can't_ I do with an unauthenticated request? 
-Make more than 60 requests per hour and read/write private info. 
+Make more than 60 requests per hour and read/write private info. The error `403 Forbidden` will be returned if you have exceeded your limit.
 
 * How can I authenticate my request?
 
@@ -42,18 +42,17 @@ $ curl 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy'
 
 ## [Users](https://developer.github.com/v3/users/)
 
-> How do I ask the API for the profile information for a specific user?
-The `get` command. This example gets user defunkt's profile. 
+* How do I ask the API for the profile information for a specific user?
+The `get` command.  
 ```
-# GET /users/defunkt
-$ curl https://api.github.com/users/defunkt
+# GET /users/:username
 ```
-```
-{
-  "login": "defunkt",
-  "id": 2,
-  "url": "https://api.github.com/users/defunkt",
-  "html_url": "https://github.com/defunkt",
-  ...
-}
-```
+Data is returned as a json.
+
+* Getting a user's repo:
+`GET /user/repos`
+
+* Public events performed by a user
+`GET /users/:username/events/public`
+
+*You can use `?page` to adjust the pages returned. The default is 30 items. https://developer.github.com/guides/traversing-with-pagination/
