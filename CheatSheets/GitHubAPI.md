@@ -148,3 +148,29 @@ All data types are represented as Strings except for the "id" field which is rep
 * What are some of the different values for the `type` field? 
 
  Links, file paths, strings, empty strings, string of numbers, Numbers
+ 
+ 
+ ##9/30
+ 
+ 
+1. How can I use the Github API to...
+
+* get all the comments for a particular issue?
+
+* add a comment to an issue?
+
+And since libraries like jQuery and Lodash have feelings... I mean APIs, too, read through some of the documentation to answer these questions:
+
+2. How can I use the jQuery API to...
+
+* get the HTML contents of an element?
+
+* create a new HTML element?
+
+* add an HTML element to the page?
+
+3. How can I use the Lodash API to...
+
+* replace placeholders with values from an object?
+
+* repeat code for every item of an array?
