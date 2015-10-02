@@ -58,7 +58,7 @@ Data is returned as a json.
 *You can use `?page` to adjust the pages returned. The default is 30 items. https://developer.github.com/guides/traversing-with-pagination/
 
 
-9/29
+##9/29
 
 1. What are the endpoints for fetching...
 
@@ -148,3 +148,39 @@ All data types are represented as Strings except for the "id" field which is rep
 * What are some of the different values for the `type` field? 
 
  Links, file paths, strings, empty strings, string of numbers, Numbers
+ 
+ 
+ ##9/30
+ 
+ 
+1. How can I use the Github API to...
+
+* get all the comments for a particular issue?
+
+Using the `GET` verb:
+`https://api.github.com/repos/OWNER/REPO/issues/NUMBER/comments`
+
+* add a comment to an issue?
+
+Using the `POST` verb:
+`https://api.github.com/repos/OWNER/REPO/issues/NUMBER/comments`
+
+2. How can I use the jQuery API to...
+
+* [get the HTML contents of an element?](http://api.jquery.com/html/)
+
+`.html()`
+
+* [create a new HTML element?](http://api.jquery.com/add/)
+
+`.add()`
+
+* add an HTML element to the page?
+
+`.add(elements)`
+
+3. How can I use the [Lodash](https://lodash.com/) API to...
+
+* replace placeholders with values from an object?
+
+* repeat code for every item of an array?
