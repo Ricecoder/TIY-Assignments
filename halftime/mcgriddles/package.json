@@ -1,0 +1,21 @@
+{
+  "name": "mcgriddles",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "browser-sync start --server --directory",
+    "sass": "node-sass --output-style expanded --output src/css/ src/scss/main.scss "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ricecoder/TIY-Assignments.git"
+  },
+  "author": "Lacey Rice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ricecoder/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/Ricecoder/TIY-Assignments#readme"
+}

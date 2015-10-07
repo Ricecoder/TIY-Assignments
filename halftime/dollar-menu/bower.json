@@ -1,0 +1,22 @@
+{
+  "name": "dollar-menu",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Ricecoder/TIY-Assignments",
+  "authors": [
+    "Lacey R. <laceyrice@me.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
