@@ -1,12 +1,22 @@
-#logo {
-  color: cornflower blue;
+#main-title {
+  color: green;
 }
 
-nav .menu {
-  background-color: cornflower blue;
+nav.menu {
+  background-color: pink;
+  display: inline-block;
+
+  span {
+    width: 25%;
+    display: inline-block;
+  }
 
   h3 {
-    color: white;
+    text-decoration: none;
+  }
+
+  h5 {
+    text-decoration: none;
   }
 
   ul.lovely {
