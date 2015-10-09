@@ -19,16 +19,14 @@ nav.menu {
     text-decoration: none;
   }
 
-  ul.lovely {
-    display: none;
-  }
+}
 
-  ul.delicious {
-    display: none;
-    }
+.panels ul {
+  display: none;
 
-  ul.fine {
-    display: none;
-  }
 
+}
+
+.panels > ul.active {
+display: inherit;
 }
