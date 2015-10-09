@@ -62,3 +62,22 @@ span.panels {
 .panels > ul.active {
 display: inherit;
 }
+
+ul#lovely {
+
+}
+
+ul#fine {
+  // position: absolute;
+
+  li {
+    float: left;
+    width: 33.33%;
+    display: inline-block;
+  }
+
+  ul {
+   display: none;
+   width: 100%;
+  }
+}
