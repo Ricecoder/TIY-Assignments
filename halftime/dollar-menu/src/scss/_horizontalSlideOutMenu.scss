@@ -4,26 +4,32 @@
 
 nav.menu {
   background-color: pink;
-  display: inline-block;
+  display: block;
 
-  span {
-    width: 25%;
-    display: inline-block;
-  }
-
-  h3 {
-    text-decoration: none;
-  }
-
-  h5 {
+  a {
     text-decoration: none;
   }
 
 }
 
-.panels ul {
-  display: none;
+span.panels {
+  margin-left: 10px;
+  margin-right: 10px;
 
+
+   ul {
+    display: none;
+
+    a {
+      float: left;
+      width: 25%;
+      display: inline-block;
+    }
+  }
+
+    h5 {
+      text-decoration: none;
+    }
 
 }
 
