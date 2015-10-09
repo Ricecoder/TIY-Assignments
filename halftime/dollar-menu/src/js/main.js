@@ -1,4 +1,4 @@
-$('#lovely').on('click', function() {
+$('a[href="#lovely"]').on('click', function() {
   console.log('tracer');
-  // $('ul.panels').addClass('active');
+  $('ul.panels').addClass('active');
 });
