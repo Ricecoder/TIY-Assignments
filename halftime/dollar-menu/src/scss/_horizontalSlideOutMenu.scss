@@ -1,0 +1,83 @@
+#main-title {
+  color: #47a3da;
+}
+
+nav.menu {
+  background-color: #47a3da;
+  display: block;
+  padding-bottom: 2%;
+
+  a {
+    text-decoration: none;
+    font-family: lato sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #fff;
+    width: 18%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2vw;
+    // TODO FIX PADDING ON LEFT AND RIGHT. MAYBE MARGIN
+  }
+
+  a::before {
+    content: "\234c";
+  }
+
+  a.active::before {
+    content: "\2353";
+  }
+
+}
+
+span.panels {
+  position: absolute;
+
+
+   ul {
+    display: none;
+    width: 100%;
+
+    li {
+      float: left;
+      width: 15.2%;
+      display: inline-block;
+    }
+
+    a {
+      width: 100%;
+      color: #a2a2a2;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+    h5 {
+
+      color: #fff;
+    }
+
+}
+
+.panels > ul.active {
+display: inherit;
+}
+
+ul#lovely {
+
+}
+
+ul#fine {
+  // position: absolute;
+
+  li {
+    float: left;
+    width: 33.33%;
+    display: inline-block;
+  }
+
+  ul {
+   display: none;
+   width: 100%;
+  }
+}
