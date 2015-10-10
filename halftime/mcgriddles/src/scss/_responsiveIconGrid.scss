@@ -1,7 +1,62 @@
-span.icon-rocket::before {
-  content:'\f135';
+header {
+  font-family: lato;
+  color: #47a3da;
 }
 
-h3::before {
-  border-top: 2px solid red;
+ul.icons {
+  list-style: none;
+  font-family: FontAwesome;
+
+
+  h3 {
+    font-size: 18pt;
+  }
+
+
+  li {
+    float: left;
+    display: inline-block;
+    width: 33.33%;
+  }
+
+  span.icon-rocket::before {
+    content:'\f135';
+    font-size: 8vw;
+
+  }
+
+  span.icon-ball::before{
+    content: '\f1e3';
+    font-size: 8vw;
+  }
+
+  span.icon-grad::before {
+    content: '\f19d';
+    font-size: 8vw;
+
+  }
+
+  span.icon-globe::before {
+    content: '\f0ac';
+    font-size: 8vw;
+  }
+
+  span.icon-glass::before {
+    content: '\f000';
+    font-size: 8vw;
+  }
+
+  span.icon-star::before {
+    content: '\f005';
+    font-size: 8vw;
+  }
+
+  //ATTEMPT TO MAKE LINE
+  // h3::before {
+  //   border-top: 2px solid red;
+  // }
+
+  a {
+    text-decoration: none;
+  }
 }
