@@ -54,7 +54,7 @@ ul.icons {                      //grid
   li {                          //grid box
     float: left;
     display: inline-block;
-    width: 33.33%;
+    // width: 33.33%;
     text-align: center;
     box-shadow: 1px 0 0 #ddd;
     padding-top: 1vw;
@@ -114,6 +114,37 @@ ul.icons {                      //grid
     font-size: 8vw;
   }
 
+}
 
+@media (max-width: 767px) {           //MOBILE
+  header {
+    text-align: center;
+  }
+
+  li {
+    width: 100%;
+  }
+
+
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px){      //TABLET
+  header {
+    text-align: center;
+  }
+
+  li {
+    width: 50%;
+  }
+
+}
+
+
+@media (min-width: 1025px) {            //DESKTOP
+  li {
+    width: 33.33%;
+  }
 
 }
