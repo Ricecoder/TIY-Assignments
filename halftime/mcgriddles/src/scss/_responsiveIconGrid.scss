@@ -12,7 +12,6 @@ ul.icons {                      //grid
   box-sizing: border-box;
   margin-left: 10px;
   margin-right: 10px;
-  color: #47a3da;
 
   h3 {                          //icon title
     font-size: 18pt;
@@ -28,10 +27,28 @@ ul.icons {                      //grid
     background: #47a3da;
     width: 10vw;
     height: 0.5vw;
-    top: 28%;
+    margin-top: -10px;
 
   }
 
+  h3::before:hover{
+    background: #fff;
+  }
+
+  h5.category {
+    color: #fff;
+
+  }
+
+  h5.category::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 10vw;
+    height: 0.5vw;
+    margin-top: -10px;
+
+  }
 
 
   li {                          //grid box
@@ -43,8 +60,14 @@ ul.icons {                      //grid
     padding-top: 1vw;
   }
 
+
   li:nth-child(-n+3) {                    //bottom border
     border-bottom: 1px solid #ddd;
+  }
+
+  li:hover {                              //hover background color
+    background-color: #47a3da;
+
   }
 
   a {                                   //link box
@@ -53,6 +76,10 @@ ul.icons {                      //grid
     margin-right: 5px;
     vertical-align: middle;
     color: #47a3da;
+  }
+
+  li > a:hover {                             //hover text color
+    color: #fff;
   }
 
   span.icon-rocket::before {              //start of icons
