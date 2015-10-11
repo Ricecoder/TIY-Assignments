@@ -6,17 +6,42 @@ header {
 ul.icons {
   list-style: none;
   font-family: FontAwesome;
-
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #47a3da;
 
   h3 {
     font-size: 18pt;
   }
 
 
+  h3.icon-title::before {
+    content: "";
+    // border-top: 2px solid red;
+
+    position: absolute;
+    background: red;
+    width: 10vw;
+    height: 0.5vw;
+
+  }
+
+
+
   li {
     float: left;
     display: inline-block;
     width: 33.33%;
+    text-align: center;
+    box-shadow: 1px 0 0 #ddd;
+    // border-bottom: 1px solid #ddd;
+  }
+
+  li:nth-child(-n+3) {
+    border-bottom: 1px solid #ddd;
   }
 
   span.icon-rocket::before {
@@ -51,10 +76,6 @@ ul.icons {
     font-size: 8vw;
   }
 
-  //ATTEMPT TO MAKE LINE
-  // h3::before {
-  //   border-top: 2px solid red;
-  // }
 
   a {
     text-decoration: none;
