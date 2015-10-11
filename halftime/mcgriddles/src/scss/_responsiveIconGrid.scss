@@ -1,10 +1,10 @@
-header {                      //title
+header {                         //title
   font-family: lato;
   color: #47a3da;
   margin-left: 10%;
 }
 
-ul.icons {                      //grid
+ul.icons {                        //grid
   list-style: none;
   font-family: FontAwesome;
   position: absolute;
@@ -13,7 +13,7 @@ ul.icons {                      //grid
   margin-left: 10px;
   margin-right: 10px;
 
-  h3 {                          //icon title
+  h3 {                            //icon title
     font-size: 18pt;
     margin-left: 5px;
     margin-right: 5px;
@@ -28,7 +28,6 @@ ul.icons {                      //grid
     width: 10vw;
     height: 0.5vw;
     margin-top: -10px;
-
   }
 
   h3::before:hover{
@@ -37,7 +36,6 @@ ul.icons {                      //grid
 
   h5.category {
     color: #fff;
-
   }
 
   h5.category::before {
@@ -47,11 +45,10 @@ ul.icons {                      //grid
     width: 10vw;
     height: 0.5vw;
     margin-top: -10px;
-
   }
 
 
-  li {                          //grid box
+  li {                                    //grid box
     float: left;
     display: inline-block;
     // width: 33.33%;
@@ -67,10 +64,9 @@ ul.icons {                      //grid
 
   li:hover {                              //hover background color
     background-color: #47a3da;
-
   }
 
-  a {                                   //link box
+  a {                                     //link box
     text-decoration: none;
     margin-left: 5px;
     margin-right: 5px;
@@ -78,14 +74,13 @@ ul.icons {                      //grid
     color: #47a3da;
   }
 
-  li > a:hover {                             //hover text color
+  li > a:hover {                          //hover text color
     color: #fff;
   }
 
   span.icon-rocket::before {              //start of icons
     content:'\f135';
     font-size: 8vw;
-
   }
 
   span.icon-ball::before{
@@ -96,7 +91,6 @@ ul.icons {                      //grid
   span.icon-grad::before {
     content: '\f19d';
     font-size: 8vw;
-
   }
 
   span.icon-globe::before {
@@ -113,7 +107,6 @@ ul.icons {                      //grid
     content: '\f005';
     font-size: 8vw;
   }
-
 }
 
 @media (max-width: 767px) {           //MOBILE
@@ -124,9 +117,6 @@ ul.icons {                      //grid
   li {
     width: 100%;
   }
-
-
-
 }
 
 
@@ -138,7 +128,6 @@ ul.icons {                      //grid
   li {
     width: 50%;
   }
-
 }
 
 
@@ -146,5 +135,4 @@ ul.icons {                      //grid
   li {
     width: 33.33%;
   }
-
 }
