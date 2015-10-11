@@ -1,0 +1,138 @@
+header {                         //title
+  font-family: lato;
+  color: #47a3da;
+  margin-left: 10%;
+}
+
+ul.icons {                        //grid
+  list-style: none;
+  font-family: FontAwesome;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  h3 {                            //icon title
+    font-size: 18pt;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 8%;
+  }
+
+
+  h3.icon-title::before {         //line
+    content: "";
+    position: absolute;
+    background: #47a3da;
+    width: 10vw;
+    height: 0.5vw;
+    margin-top: -10px;
+  }
+
+  h3::before:hover{
+    background: #fff;
+  }
+
+  h5.category {
+    color: #fff;
+  }
+
+  h5.category::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 10vw;
+    height: 0.5vw;
+    margin-top: -10px;
+  }
+
+
+  li {                                    //grid box
+    float: left;
+    display: inline-block;
+    // width: 33.33%;
+    text-align: center;
+    box-shadow: 1px 0 0 #ddd;
+    padding-top: 1vw;
+  }
+
+
+  li:nth-child(-n+3) {                    //bottom border
+    border-bottom: 1px solid #ddd;
+  }
+
+  li:hover {                              //hover background color
+    background-color: #47a3da;
+  }
+
+  a {                                     //link box
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #47a3da;
+  }
+
+  li > a:hover {                          //hover text color
+    color: #fff;
+  }
+
+  span.icon-rocket::before {              //start of icons
+    content:'\f135';
+    font-size: 8vw;
+  }
+
+  span.icon-ball::before{
+    content: '\f1e3';
+    font-size: 8vw;
+  }
+
+  span.icon-grad::before {
+    content: '\f19d';
+    font-size: 8vw;
+  }
+
+  span.icon-globe::before {
+    content: '\f0ac';
+    font-size: 8vw;
+  }
+
+  span.icon-glass::before {
+    content: '\f000';
+    font-size: 8vw;
+  }
+
+  span.icon-star::before {            //end of icons
+    content: '\f005';
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 767px) {           //MOBILE
+  header {
+    text-align: center;
+  }
+
+  li {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px){      //TABLET
+  header {
+    text-align: center;
+  }
+
+  li {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 1025px) {            //DESKTOP
+  li {
+    width: 33.33%;
+  }
+}
