@@ -51,12 +51,29 @@ nav.menu {
     .panels > li {
       width: 100%;
     }
+
+    ul.active {
+      position: relative;
+    }
+
+    li {
+      display: block;
+    }
    }
 
 
    @media (max-width: 1024px) and (min-width: 768px){      //TABLET
      .panels > li {
        width: 33.33%;
+
+     }
+
+     ul.active {
+       position: relative;
+     }
+
+     li {
+       display: block;
      }
    }
 
