@@ -30,7 +30,7 @@ ul.icons {                        //grid
     margin-top: -10px;
   }
 
-  h3::before:hover{
+  h3::before:hover{             //line hover
     background: #fff;
   }
 
@@ -48,7 +48,7 @@ ul.icons {                        //grid
   }
 
 
-  li {                                    //grid box
+  li {                               //grid box
     float: left;
     display: inline-block;
     // width: 33.33%;
@@ -64,6 +64,9 @@ ul.icons {                        //grid
 
   li:hover {                              //hover background color
     background-color: #47a3da;
+  }
+  li:hover .icon-rocket {
+    color: #fff;
   }
 
   a {                                     //link box
