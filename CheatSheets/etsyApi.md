@@ -45,3 +45,48 @@ Nothing. You must authenticate.
 ###8. How can I authenticate my request? (what methods)
 
  OAuth 2.0, public api key-based authentication.
+ 
+ 
+ 
+##What Resource in the API represents...
+
+###an individual product?
+
+fields and associations
+
+
+###a group or collection of products?
+
+associations
+
+
+###images associated with a product?
+
+associations
+loads only the first image (limit 1, offset 0): /v2/listings/active?includes=Images:1:0
+
+
+###sizes and colors for a product?
+
+
+###What actions and endpoints exist for each of these Resources?
+
+
+###What parameters do each endpoint require or accept?
+
+fields, associations, limit/offset
+
+
+###What fields are returned for each Resource, specifically:
+
+###an individual product?
+
+You can control which fields are returned using:/v2/listings/active?fields=listing_id,title,price
+You can also specify which fields of an association returned: /v2/listings/active?includes=Images(url_75x75,hex_code)
+
+###a group or collection of products?
+
+v2/listings/active?includes=Images,Shop
+
+
+###What additional fields can be requested for each?
