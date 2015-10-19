@@ -90,3 +90,85 @@ v2/listings/active?includes=Images,Shop
 
 
 ###What additional fields can be requested for each?
+
+
+
+##For the product list (category) page what data is needed from...
+
+###[the Listing resource?](https://www.etsy.com/developers/documentation/reference/listing)
+
+listing state
+
+marketplace attributes
+
+associations
+
+methods
+
+
+###[the ListingImage resource?](https://www.etsy.com/developers/documentation/reference/listingimage)
+
+`findAllListingImages`
+
+`getImage_Listing`
+
+
+
+###the Variations_* resources?
+
+[Option](https://www.etsy.com/developers/documentation/reference/listingimage)
+
+`value`, `is_available`, `price`
+
+
+###the [Category resource?](https://www.etsy.com/developers/documentation/reference/category)
+
+`getCategory`
+
+
+###the [Shop resource?](https://www.etsy.com/developers/documentation/reference/shop)
+
+`getShop`
+
+
+
+
+###On the product detail page what data is needed from...
+
+
+###the Listing resource?
+
+`getListing`
+
+###the ListingImage resource?
+
+`getImage_Listing`
+
+
+###the Variations_* resources?
+
+`value`, `is_available`, `price`
+
+
+###the Category resource?
+
+`getCategory`
+
+
+###the Shop resource?
+
+`getShop`
+
+
+##Identified for each:
+
+###API endpoint
+
+
+###required query params
+
+
+###additional params needed (fields, includes)
+
+
+###sample data returned
